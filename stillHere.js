@@ -18,11 +18,11 @@ function checkDialog() {
     clickYes();
 }
 
-async function main() {
+async function start() {
     while (true) {
         await sleep(2000);
         checkDialog();
     }
 }
 
-window.onload = main;
+window.onload = start;
