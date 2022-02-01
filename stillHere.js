@@ -15,13 +15,14 @@ function checkDialog() {
         return false;
     }
 
-    return clickYes();
+    clickYes();
 }
 
-function main() {
+async function main() {
     while (true) {
-        sleep(2000).then(() => { checkDialog(); });
+        await sleep(2000);
+        checkDialog();
     }
 }
 
-window.onload = main();
+window.onload = main;
