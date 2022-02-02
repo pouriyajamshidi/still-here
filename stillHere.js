@@ -1,40 +1,34 @@
-const nixLog = "/tmp/stillHere.log"
-const winLog = ""
-
-function detectOS() {
-    let currentOS = { isWin: false, isNix: false };
-    let platform = navigator.userAgentData.platform;
-
-    if (platform === "Windows") currentOS.isWin = true;
-    else currentOS.isNix = true;
-
-    return currentOS;
-}
-
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function clickYes() {
     document.getElementById('confirm-button').click();
-    console.log("Successfully clicked confirm button")
+    console.log(`[Still Here] Successfully got rid of the confirm button at ${Date.now()}`)
 }
 
 function checkDialog() {
     let confirmButton = document.getElementById('confirm-button')
 
     if (confirmButton === null) {
-        console.log("No dialog box detected")
         return false;
     }
 
     clickYes();
+    return true;
 }
 
 async function start() {
+    let clicked = false;
+
     while (true) {
         await sleep(2000);
-        checkDialog();
+        clicked = checkDialog();
+
+        if (clicked) {
+            await sleep(600000);
+            clicked = false;
+        }
     }
 }
 
