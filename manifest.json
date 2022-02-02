@@ -2,9 +2,14 @@
     "manifest_version": 2,
     "name": "YouTube Still Here",
     "description": "Prevents YouTube from pausing your playlists by showing 'Video paused. Continue watching?' dialog",
-    "version": "1.1",
+    "version": "1.2",
     "browser_action": {
         "default_icon": "./icons/play.png"
+    },
+    "icons": {
+        "16": "./icons/play16x16.png",
+        "48": "./icons/play48x48.png",
+        "128": "./icons/play128x128.png"
     },
     "content_scripts": [
         {
