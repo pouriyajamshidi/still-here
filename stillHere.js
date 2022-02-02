@@ -4,7 +4,7 @@ function sleep(ms) {
 
 function clickYes() {
     document.getElementById('confirm-button').click();
-    console.log(`[Still Here] Successfully got rid of the confirm button at ${Date.now()}`)
+    console.log(`${Date.now()}: [Still Here] - Successfully got rid of the confirm button`)
 }
 
 function checkDialog() {
