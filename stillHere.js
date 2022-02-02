@@ -1,3 +1,16 @@
+const nixLog = "/tmp/stillHere.log"
+const winLog = ""
+
+function detectOS() {
+    let currentOS = { isWin: false, isNix: false };
+    const OS = navigator.appVersion;
+
+    if (OS.indexOf("Win") != -1) currentOS.isWin = true;
+    else currentOS.isNix = true;
+
+    return currentOS;
+}
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
