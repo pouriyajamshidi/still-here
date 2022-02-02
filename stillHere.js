@@ -3,9 +3,9 @@ const winLog = ""
 
 function detectOS() {
     let currentOS = { isWin: false, isNix: false };
-    const OS = navigator.appVersion;
+    let platform = navigator.userAgentData.platform;
 
-    if (OS.indexOf("Win") != -1) currentOS.isWin = true;
+    if (platform === "Windows") currentOS.isWin = true;
     else currentOS.isNix = true;
 
     return currentOS;
