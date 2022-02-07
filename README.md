@@ -9,9 +9,9 @@ It is available for the major browsers:
 - Google Chrome (under review)
 - [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/youtube-still-here/)
 - [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/youtube-still-here/pkfgkcldniiineoelnemkcieglbcikbk)
-- Opera (under review for stable version, available on Opera Dev and Next versions)
+- [Opera](https://addons.opera.com/en/extensions/details/youtube-still-here/)
 
-additionally you can clone this repository, head to your browser's extension settings, enable developer mode, click on `Load unpacked` and select the directory containing this repository.
+Additionally you can clone this repository, head to your browser's extension settings, enable developer mode, click on `Load unpacked` and select the directory containing this repository.
 
 ## NOTE
 
