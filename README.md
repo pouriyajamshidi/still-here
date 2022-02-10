@@ -6,7 +6,7 @@ This extension gets rid of the annoying YouTube 'Video paused. Continue watching
 
 It is available for the major browsers:
 
-- Google Chrome (under review)
+- [Google Chrome](https://chrome.google.com/webstore/detail/youtube-still-here/kplemiekakilaiiciopjlgcdklpfcmii?hl=en)
 - [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/youtube-still-here/)
 - [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/youtube-still-here/pkfgkcldniiineoelnemkcieglbcikbk)
 - [Opera](https://addons.opera.com/en/extensions/details/youtube-still-here/)
