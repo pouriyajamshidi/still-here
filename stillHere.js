@@ -2,19 +2,34 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function clickYes() {
-    document.getElementById('confirm-button').click();
-    console.log(`${Date.now()}: [Still Here] - Successfully got rid of the confirm button`)
+function getDate() {
+    return new Date().toISOString().slice(0, 10)
 }
 
-function checkDialog() {
-    let confirmButton = document.getElementById('confirm-button')
+function clickYes(button) {
+    button.click();
+    console.log(`${getDate()}: [Still Here] - Successfully got rid of the confirm button`)
+}
+
+function youTubeCheckDialog() {
+    var confirmButton = document.getElementById('confirm-button')
 
     if (confirmButton === null) {
         return false;
     }
 
-    clickYes();
+    clickYes(confirmButton);
+    return true;
+}
+
+function youTubeMusicCheckDialog() {
+    var confirmButton = document.querySelector("body > ytmusic-app > ytmusic-popup-container > tp-yt-paper-dialog > ytmusic-you-there-renderer > div > yt-button-renderer")
+
+    if (confirmButton === null) {
+        return false;
+    }
+
+    clickYes(confirmButton);
     return true;
 }
 
@@ -22,14 +37,21 @@ async function start() {
     let clicked = false;
 
     while (true) {
-        await sleep(2000);
-        clicked = checkDialog();
+        let site = window.location.hostname
+
+        if (site === "www.youtube.com") {
+            clicked = youTubeCheckDialog();
+        } else if (site === "music.youtube.com") {
+            clicked = youTubeMusicCheckDialog();
+        }
 
         if (clicked) {
-            await sleep(600000);
             clicked = false;
+            await sleep(600000);
+        } else {
+            await sleep(2000);
         }
     }
 }
 
-window.onload = start;
+window.onload = start();
