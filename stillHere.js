@@ -49,7 +49,7 @@ async function start() {
             clicked = false;
             await sleep(600000);
         } else {
-            await sleep(2000);
+            await sleep(1000);
         }
     }
 }
