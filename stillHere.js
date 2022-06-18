@@ -3,7 +3,15 @@ function sleep(ms) {
 }
 
 function getDate() {
-    return new Date().toISOString().slice(0, 10)
+    var d = new Date(); 
+    var hours = (d.getHours());
+    var minutes = (d.getMinutes());
+    var seconds = (d.getSeconds());
+    var day = (d.getDate());
+    var month = (d.getMonth());
+    var year = (d.getFullYear());
+
+    return `${year}-${month}-${day} - ${hours}:${minutes}:${seconds}`;
 }
 
 function clickYes(button) {
@@ -12,7 +20,7 @@ function clickYes(button) {
 }
 
 function youTubeCheckDialog() {
-    var confirmButton = document.getElementById('confirm-button')
+    const confirmButton = document.getElementById('confirm-button')
 
     if (confirmButton === null) {
         return false;
@@ -23,7 +31,7 @@ function youTubeCheckDialog() {
 }
 
 function youTubeMusicCheckDialog() {
-    var confirmButton = document.querySelector("body > ytmusic-app > ytmusic-popup-container > tp-yt-paper-dialog > ytmusic-you-there-renderer > div > yt-button-renderer")
+    const confirmButton = document.querySelector("body > ytmusic-app > ytmusic-popup-container > tp-yt-paper-dialog > ytmusic-you-there-renderer > div > yt-button-renderer")
 
     if (confirmButton === null) {
         return false;
@@ -34,10 +42,10 @@ function youTubeMusicCheckDialog() {
 }
 
 async function start() {
-    let clicked = false;
+    var clicked = false;
 
     while (true) {
-        let site = window.location.hostname
+        var site = window.location.hostname
 
         if (site === "www.youtube.com") {
             clicked = youTubeCheckDialog();
