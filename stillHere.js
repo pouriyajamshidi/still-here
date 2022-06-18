@@ -3,7 +3,7 @@ function sleep(ms) {
 }
 
 function getDate() {
-    var d = new Date(); 
+    var d = new Date();
     var hours = (d.getHours());
     var minutes = (d.getMinutes());
     var seconds = (d.getSeconds());
@@ -41,11 +41,18 @@ function youTubeMusicCheckDialog() {
     return true;
 }
 
+function changeVisibility() {
+    Object.defineProperty(document, 'visibilityState', { value: 'visible', writable: false });
+    Object.defineProperty(document, 'hidden', { value: false, writable: false });
+    document.dispatchEvent(new Event("visibilitychange"));
+}
+
 async function start() {
     var clicked = false;
 
     while (true) {
         var site = window.location.hostname
+        changeVisibility();
 
         if (site === "www.youtube.com") {
             clicked = youTubeCheckDialog();
