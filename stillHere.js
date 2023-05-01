@@ -23,16 +23,18 @@ function youTubeCheckDialog() {
     // if (confirmButton === null) {
     //     return false;
     // }
-
     // confirmButton.click();
+
     let button = document.querySelector('button.yt-spec-button-shape-next[aria-label="Yes"]');
 
-    if (button) {
-        button.click();
-        let parent = button.parentNode;
-        parent.removeChild(button);
-        console.log(`${getDate()}: [Still Here] - Successfully got rid of the confirm button`)
+    if (button === null) {
+        return false;
     }
+
+    button.click();
+    console.log(`${getDate()}: [Still Here] - Successfully got rid of the confirm button`)
+    let parent = button.parentNode;
+    parent.removeChild(button);
 
     button = null;
 
@@ -50,6 +52,7 @@ function youTubeMusicCheckDialog() {
     }
 
     button.click();
+    console.log(`${getDate()}: [Still Here] - Successfully got rid of the confirm button`)
 
     return true;
 }
@@ -99,4 +102,5 @@ async function start() {
     }
 }
 
-window.onload = start();
+window.addEventListener('load', start);
+
