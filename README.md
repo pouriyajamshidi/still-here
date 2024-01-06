@@ -6,7 +6,7 @@ This extension gets rid of the annoying YouTube and YouTube Music's 'Video pause
 
 It is available for the major browsers:
 
-- [Google Chrome](https://chrome.google.com/webstore/detail/youtube-still-here/kplemiekakilaiiciopjlgcdklpfcmii?hl=en)
+- [Google Chrome](https://chrome.google.com/webstore/detail/youtube-still-here/kplemiekakilaiiciopjlgcdklpfcmii?hl=en) - Removed by Google in 2023 after the whole adblock fiasco.
 - [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/youtube-still-here/)
 - [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/youtube-still-here/pkfgkcldniiineoelnemkcieglbcikbk)
 - [Opera](https://addons.opera.com/en/extensions/details/youtube-still-here/)
