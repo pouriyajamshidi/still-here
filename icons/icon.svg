@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <title>Still Here</title>
+  <!-- the dialog we answer for you -->
+  <path fill="#FF0033" d="M36 90 L36 124 L68 90 Z"/>
+  <rect x="8" y="14" width="112" height="84" rx="24" fill="#FF0033"/>
+  <!-- and the answer we always give -->
+  <path d="M51 34 L89 56 L51 78 Z" fill="#fff" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+</svg>
