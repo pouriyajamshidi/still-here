@@ -13,7 +13,7 @@ Two things, both running in the page itself:
 
 ## Install
 
-- [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/youtube-still-here/) — requires Firefox 128 or newer
+- [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/youtube-still-here/) — requires Firefox 140 or newer
 - [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/youtube-still-here/pkfgkcldniiineoelnemkcieglbcikbk)
 - [Opera](https://addons.opera.com/en/extensions/details/youtube-still-here/)
 - [Google Chrome](https://chrome.google.com/webstore/detail/youtube-still-here/kplemiekakilaiiciopjlgcdklpfcmii?hl=en) — removed by Google in 2023 after the whole adblock fiasco
@@ -29,6 +29,10 @@ The extension is silent by default apart from one line. Open the console on a Yo
 ```
 
 Every time it answers the dialog for you, it logs that too. If you see the first line but the dialog still interrupts you, please [open an issue](https://github.com/pouriyajamshidi/still-here/issues) with the dialog's HTML — YouTube changes its markup often, and that is exactly what is needed to fix it.
+
+## Privacy
+
+Still Here collects no data at all. See the [privacy policy](PRIVACY.md).
 
 ## Sponsor me
 
