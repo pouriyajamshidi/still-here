@@ -16,7 +16,8 @@ Two things, both running in the page itself:
 - [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/youtube-still-here/) — requires Firefox 140 or newer
 - [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/youtube-still-here/pkfgkcldniiineoelnemkcieglbcikbk)
 - [Opera](https://addons.opera.com/en/extensions/details/youtube-still-here/)
-- [Google Chrome](https://chrome.google.com/webstore/detail/youtube-still-here/kplemiekakilaiiciopjlgcdklpfcmii?hl=en) — removed by Google in 2023 after the whole adblock fiasco
+- [Google Chrome](https://chromewebstore.google.com/detail/youtube-still-here/kjdcaefbacejlcipkbnanidfbnpdokkc?hl=en)
+- [Brave](https://chromewebstore.google.com/detail/youtube-still-here/kjdcaefbacejlcipkbnanidfbnpdokkc?hl=en)
 
 Or clone this repository, head to your browser's extension settings, enable developer mode, click on `Load unpacked` and select the directory containing this repository.
 
@@ -24,7 +25,7 @@ Or clone this repository, head to your browser's extension settings, enable deve
 
 The extension is silent by default apart from one line. Open the console on a YouTube tab (F12) and you should see:
 
-```
+```text
 [Still Here] - watching for the "Continue watching?" dialog
 ```
 
@@ -36,6 +37,6 @@ Still Here collects no data at all. See the [privacy policy](PRIVACY.md).
 
 ## Sponsor me
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/pouriyajamshidi)  
-[![sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/pouriyajamshidi)  
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/pouriyajamshidi)
+[![sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/pouriyajamshidi)
 ![GitHub Sponsor](https://img.shields.io/github/sponsors/pouriyajamshidi?label=Sponsor&logo=GitHub)
